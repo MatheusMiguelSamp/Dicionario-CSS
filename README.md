@@ -5,6 +5,12 @@ A ideia é criar um **glossário vivo**, com exemplos práticos e explicações 
 
 ---
 
+## 🔴 Atenção
+
+Todos os direitos autorais reservados ao site w3schools.com, os diagramas foram tirados do site e implementados aqui, junto de alguns exemplos.
+
+---
+
 ## 🚀 Objetivos
 - 📚 Documentar propriedades, classes e truques do CSS.
 - 🧩 Mostrar usos práticos com **exemplos de código**.
