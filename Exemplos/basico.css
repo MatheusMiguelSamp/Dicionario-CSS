@@ -12,7 +12,7 @@ dois seletores de elementos com mesmas características podem estar na mesma lin
 
 /*Eu dou preferência ao formato HSL ao invés do RGB, recomendo dar uma olhada nesse formato
 é muito mais simples de ler e settar as cores, o 1° valor é o HUE, vai de 0 até 360 (pega todos os espectros de cores),
-o 2° é a saturação que vai de 0% até 100% e a 3° é a luz, que também vai de 0% até 100%, muito mais legível que o RGB*/
+o 2° é a saturação que vai de 0% até 100% e a 3° é a luz, que também vai de 0% até 100%, muito mais legível que o RGB */
 
 .basico {
     color: hsl(0, 100%, 50%);
