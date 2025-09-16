@@ -1,21 +1,53 @@
+/*Comentários em CSS podem ser escritos em qualquer lugar que o computador não lê eles,
+inclusive no meio das propriedades, diferente dos comentários em HTML, eles não são feitos
+com setas, mas sim / e *, e também são multilinha*/
+
+/*
+Classes são escritas com . + um nome
+seletores de elementos não requerem .
+seletores por id necessitam de um #
+o seletor * serve para todos os elementos da página
+dois seletores de elementos com mesmas características podem estar na mesma linha separados com uma ,
+*/
+
+/*Eu dou preferência ao formato HSL ao invés do RGB, recomendo dar uma olhada nesse formato
+é muito mais simples de ler e settar as cores, o 1° valor é o HUE, vai de 0 até 360 (pega todos os espectros de cores),
+o 2° é a saturação que vai de 0% até 100% e a 3° é a luz, que também vai de 0% até 100%, muito mais legível que o RGB*/
+
 .basico {
-    color: red;
+    color: hsl(0, 100%, 50%);
     text-align: center;
 }
 
 .lista {
     list-style-type: square;
-    color: rgb(255, 102, 0);
+    color: hsl(25, 100%, 50%);
 }
 
 div {
-    background-color: yellow;
+    background-color: hsl(60, 100%, 50%);
     width: 200px;
     height: 200px;
     text-align: center;
-    color: cyan;
+    color: hsl(170, 100%, 50%);
 }
 
 #para5{
-    color: green;
+    color: hsl(120, 100%, 25%);
+}
+
+p {
+    color: hsl(0, 0%, 0%);
+}
+
+p.diferente {
+    color: hsl(300, 100%, 50%);
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    color: hsl(120, 100%, 50%);
 }

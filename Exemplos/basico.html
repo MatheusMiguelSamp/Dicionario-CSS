@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="basico.css">
+    <link rel="stylesheet" type="text/css" href="basico.css">
 </head>
 <body>
     <!-- Comentários em html são criados com essas setinha de hífens, e não serão lidos como códigos -->
@@ -15,8 +15,11 @@
     porém se estiver em pastas diferentes, você deverá alterar o caminho até chegar no seu arquivo css-->
 
     <!-- Também é possível criar uma tag <style></style> e colocar propriedades dentro dela que serão lidas como css,
-    ou ainda atribuir as palavras style="" dentro de um elemento html para dar suas propriedades mas só para aquele elemento,
+    ou ainda atribuir as palavras style="" dentro de um elemento html, para dar suas propriedades, mas só para aquele elemento,
     elementos html com um style próprio, tendem a sobrepor um style já feito com aquilo que está escrito dentro do próprio style=""-->
+
+    <!-- A sobreposição tem ordem de prioridade, levando o inline como mais ao topo, seguido de um css feito num arquivo .css
+    ou dentro da tag <style></style>, e por fim, as intruções do navegador-->
 
     <!-- Classes em CSS são compostas de um ponto finail (.) + o nome que você escolher para aquela classe:-->
 
@@ -30,7 +33,9 @@
 
     <p>Sou um parágrafo, e por padrão sou preto, mas posso receber uma classe para mudar minha cor</p>
 
-    <p style="color: blue;">Sou mais um parágrafo, mas desta vez eu sou azul porque possuo uma tag style própria</p>
+    <p style="color: hsl(240, 100%, 50%);">Sou mais um parágrafo, mas desta vez eu sou azul porque possuo uma tag style própria</p>
+
+    <p class="diferente">Sou um parágrafo que mesmo meu seletor selecionando todos os p's, eu possuo uma classe junta dele, que me deixa pink </p>
 
     <ul>
         <li>Sou uma lista não ordenada, e por padrão sou preta e devo estar dentro de uma tag ul</li>
@@ -49,7 +54,7 @@
     recebem classes e estilos próprios, o que as tornam ferramentas valiosas para o design-->
 
     <div>
-        <p>Sou um parágrafo dentro de uma div que por padrão me deixa com a cor ciano dentro de um quadrado amarelo</p>
+        Sou um texto dentro de uma div que por padrão me deixa com a cor ciano dentro de um quadrado amarelo
     </div>
 
     <div style="margin-top:10px">
@@ -60,8 +65,8 @@
 
     <p id="para5">Sou um parágrafo especial, ao invés de uma style, eu possuo um id que foi escrito no arquivo css com um # + o meu id</p>
 
-    <!-- Existem mais 2 seletores que não foram abordados nesse arquivo html, porque já tem muitos elementos, ele iriam ficar sobrepondo as  classes e elementos existentes,
-    são eles o * e o que une classes iguais para minimizar códigos que possuem a mesma instrução, então eles podem ser escritos como: h2, h3 {}
-    no caso do *, ele funciona para todos os elementos e será muito utilizado nos próximos códigos e melhor explicado nos mesmos -->
+    <h2>Sou outro título que recebo os mesmos atributos que o h3, por isso somos verdes</h2>
+
+    <h3>E eu sou o h3</h3>
 </body>
 </html>
