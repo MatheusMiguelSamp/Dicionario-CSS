@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="backgrounds.css">
+</head>
+<body>
+
+    <h1 style="text-align: center; margin-top: 20px;">Essa página vai dar multiplos exemplos de como usar os backgrounds</h1>
+
+    <div style="display: flex; margin-top: 50px;">
+
+        <div class="caixa background-azul">
+            <p>Esse é um exemplo de background azul</p>
+        </div>
+
+        <div class="caixa background-azul opaco">
+            <p>Esse é o mesmo exemplo que o anterior, mas com opacidade de 0.5</p>
+        </div>
+
+        <div class="caixa background-azul-hsla">
+            <p>Esse é a mesma coisa que os dois anteriores juntos, porém usando a propriedade
+               alpha do hsla para definir a cor azul com opacidade de 0.5</p>
+        </div>
+
+    </div>
+
+    <div style="display: flex; margin-top: 50px;">
+
+        <div class="caixa background-imagem">
+            <p>Esse é um exemplo de background com imagem</p>
+        </div>
+
+        <div class="caixa-grande background-imagem">
+            <p>Esse é o mesmo exemplo que o anterior, mas com mais espaço, por padrão ela fica se repetindo na horizontal
+                e na vertical, mas com a propriedade background-size: cover; ela cobre todo o espaço do elemento</p>
+        </div>
+
+        <div class="caixa-grande background-imagem cover">
+            <p>Mesma imagem, mas dessa vez no seu 100% por conta da propriedade: background-size: cover</p>
+        </div>
+
+    </div>
+
+    <div style="display: flex; margin-top: 50px;">
+
+        <!--Nesses exemplos aqui, eu coloquei bordas para entender melhor as suas instruções-->
+
+        <div class="caixa-grande background-imagem repeat-horizontal border">
+            <p>Essa imagem só se repete na horizontal, e deixa um espaço extra em baixo por conta do tamanho dela ser maior do que o da imagem</p>
+        </div>
+
+        <div>
+            <div class="caixa-grande background-imagem repeat-vertical border" style="padding-right: 43%;">
+                <p>Essa imagem só se repete na vertical, e deixa um espaço extra na direita por conta do tamanho dela ser maior do que o da imagem</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="caixa-grande background-imagem no-repeat border" style="padding-right: 43%;">
+                <p>Essa imagem não possui repetição, por isso ela fica no seu tamanho original, no canto superior esquerdo</p>
+            </div>
+        </div>
+
+        <!--Essa daqui é interessante, se colocada no seletor do body, ela usa a própria página como guia de posicionamento-->
+
+        <div class="caixa background-imagem position">
+            <p>Essa imagem ficou posicionada dentro da div que possui os exemplos com bordas, se colocada em outra parte do código, ela vai buscar outro posicionamento</p>
+        </div>
+
+    </div> 
+    
+    <div style="display: flex; margin-top: 50px;">
+
+        <div class="caixa background-imagem attachment-scroll cover">
+            <p>Se for scrollada a página, essa imagem acompanhará a página como as outras, mas se tiver um attachment: fixed, ela vai ficar que nem
+                essa caixa que te seguiu por todo o site
+            </p>
+        </div>
+
+        <!-- O quadrado que te seguiu até então, ele é um background colocado no body, só funciona dentro de um seletor e
+        se tiver: uma posição, o attachment fixed e de preferência um cover e um no-repeat-->
+
+        <div style="margin-top: 1000px;">
+            <p style="color: black;">Um monte de espaço para poder scrollar a página</p>
+        </div>
+
+    </div>
+</body>
+</html>

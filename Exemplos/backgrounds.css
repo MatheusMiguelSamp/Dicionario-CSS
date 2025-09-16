@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding: 15%;
+}
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.caixa-grande {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+.background-azul {
+    background-color: blue;
+}
+
+.opaco {
+    opacity: 0.5;
+}
+
+.background-azul-hsla {
+    background-color: hsla(240, 100%, 50%, 0.5);
+}
+
+.background-imagem {
+    background-image: url('../Diagramas/Imagens/gradiente.jpg');
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.cover {
+    background-size: cover;
+}
+
+.repeat-horizontal {
+    background-repeat: repeat-x;
+}
+
+.repeat-vertical {
+    background-repeat: repeat-y;
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+.position {
+    background-position: top right;
+}
+
+.attachment-scroll {
+    background-attachment: scroll;
+}
+
+/* Remova esse comentário e se já tiver outro seletor body, retire ou comente ele e veja o que acontecerá com a imagem do gradiente
+body {
+    background-image: url('../Diagramas/Imagens/gradiente.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+*/
+
+body {
+    background-image: url('../Diagramas/Imagens/gradiente.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+}
+
+/* Também é possível usar o "shorthand" para fazer uma tag mais clean do que essa de cima:*/
+/*
+body {
+    background: url('../Diagramas/Imagens/gradiente.jpg') no-repeat bottom right fixed;
+}
+*/
