@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basico.css">
+</head>
+<body>
+    <!-- Comentários em html são criados com essas setinha de hífens, e não serão lidos como códigos -->
+
+    <!-- Não se esqueça de scrollar a página quando ela ficar extensa, para ver os outros exemplos-->
+
+    <!-- Se preferir, você pode linkar um arquivo .css no seu projeto via o mesmo comando da linha 7,
+    porém se estiver em pastas diferentes, você deverá alterar o caminho até chegar no seu arquivo css-->
+
+    <!-- Também é possível criar uma tag <style></style> e colocar propriedades dentro dela que serão lidas como css,
+    ou ainda atribuir as palavras style="" dentro de um elemento html para dar suas propriedades mas só para aquele elemento,
+    elementos html com um style próprio, tendem a sobrepor um style já feito com aquilo que está escrito dentro do próprio style=""-->
+
+    <!-- Classes em CSS são compostas de um ponto finail (.) + o nome que você escolher para aquela classe:-->
+
+    <h1 class="basico">Sou um título que recebo a classe .basico, por isso sou vermelho e sempre estarei no meio da página</h1>
+
+    <h1>Sou um título que não recebo nenhuma classe, por isso sou preto e sempre estarei no canto esquerdo da página</h1>
+
+    <!-- Todos os h são títulos e vão de 1 até 6, sendo o 1 maior e o 6 menor-->
+
+    <p class="basico">Sou um parágrafo que recebo a classe .basico (igual ao título), por isso sou vermelho e sempre estarei no meio da página</p>
+
+    <p>Sou um parágrafo, e por padrão sou preto, mas posso receber uma classe para mudar minha cor</p>
+
+    <p style="color: blue;">Sou mais um parágrafo, mas desta vez eu sou azul porque possuo uma tag style própria</p>
+
+    <ul>
+        <li>Sou uma lista não ordenada, e por padrão sou preta e devo estar dentro de uma tag ul</li>
+        <li class="lista">Sou uma lista não ordenada que recebe a classe .lista, por isso sou laranja e tenho um quadrado ao invés do ponto no começo da lista</li>
+    </ul>
+
+    <ol>
+        <li>Sou uma lista ordenada dessa vez, pois não começo mais com a tag ul, mas sim a tag ol</li>
+        <li>Sou o 2° exemplo da lista ordenada, colocada para dar contexto</li>
+    </ol>
+
+    <!-- No exemplo a seguir, essa div não possui classe, mas por conta do arquivo basico.css dizer que o seletor são todas as div,
+    toda vez que eu escrever a tag div, ele irá pegar as mesmas informações e criar o mesmo elemento, com as mesma instruções-->
+
+    <!-- Divs são caixas onde você utiliza elas para organizar as partes do seu design em pequenos blocos, divs podem estar dentro de outras divs,
+    recebem classes e estilos próprios, o que as tornam ferramentas valiosas para o design-->
+
+    <div>
+        <p>Sou um parágrafo dentro de uma div que por padrão me deixa com a cor ciano dentro de um quadrado amarelo</p>
+    </div>
+
+    <div style="margin-top:10px">
+        <!-- Essa div possui um margin top para não ficar grudada com a div de cima, ela continua com as mesmas instruções da div porém com o margin sobrepondo-->
+    </div>
+ 
+    <!-- O exemplo a seguir, possui um id ao invés de um style próprio, porque ele tem um seletor por id escrito assim: #para5, (o número 5 é por causa que ele é o 5° p)-->
+
+    <p id="para5">Sou um parágrafo especial, ao invés de uma style, eu possuo um id que foi escrito no arquivo css com um # + o meu id</p>
+
+    <!-- Existem mais 2 seletores que não foram abordados nesse arquivo html, porque já tem muitos elementos, ele iriam ficar sobrepondo as  classes e elementos existentes,
+    são eles o * e o que une classes iguais para minimizar códigos que possuem a mesma instrução, então eles podem ser escritos como: h2, h3 {}
+    no caso do *, ele funciona para todos os elementos e será muito utilizado nos próximos códigos e melhor explicado nos mesmos -->
+</body>
+</html>

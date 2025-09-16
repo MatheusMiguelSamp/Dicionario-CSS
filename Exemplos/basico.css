@@ -1,0 +1,21 @@
+.basico {
+    color: red;
+    text-align: center;
+}
+
+.lista {
+    list-style-type: square;
+    color: rgb(255, 102, 0);
+}
+
+div {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: cyan;
+}
+
+#para5{
+    color: green;
+}
