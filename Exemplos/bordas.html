@@ -99,7 +99,7 @@
         </div>
 
         <div class="caixa redondo-10">
-            <p>Essa é uma borda com border-radius em 10px</p>      
+            <p>Essa é uma borda com border-radius em 10px</p>
         </div>
 
         <div class="caixa redondo-20">
@@ -114,25 +114,57 @@
 
     <hr>
 
+    <h1>Também temos as bordas em outline, não só border</h1>
+
+    <div class="grid-bordas">
+
+        <!-- Igual ao border, ele também possui pre-sets de width e mesmos styles-->
+
+        <div class="caixa outline">
+            <p>Essa é uma borda com outline</p>
+        </div>
+
+        <div class="caixa outline border-blue">
+            <p>Essa é uma borda com outline e border</p>
+        </div>
+
+        <!-- Nota-se que outline é fora do elemento e border é dentro do elemento
+        um uso muito comum de outline, é na criação de comando :hover, para dar highlight no elemento-->
+
+        <div class="caixa offset border-blue">
+            <p style="padding-top: 5%;">Essa é uma borda com outline, border, mas também com um offset</p>
+        </div>
+
+        <div class="caixa offset-negativo border-blue">
+            <p style="padding-top: 0.1%;">Essa é uma borda com outline, border, mas dessa vez o offset está negativo</p>
+        </div>        
+
+    </div>
+
+    <hr>
+
     <h1>Dica extra:</h1>
 
     <div class="grid-bordas">
 
         <div class="caixa-grande shorthand">
-            <p style="padding-top: 5%;">Caso você utilize o shorthand, saiba que não precisa settar todos os 4 valores, os 2 primeiros: top e right
-                já são suficientes para definir os 4 lados da borda, sendo settado o top, o bottom será igual, e com o right
+            <p style="padding-top: 5%;">Caso você utilize o shorthand, saiba que não precisa settar todos os 4 valores,
+                os 2 primeiros: top e right
+                já são suficientes para definir os 4 lados da borda, sendo settado o top, o bottom será igual, e com o
+                right
                 settado, o left será igual.</p>
         </div>
 
         <div class="caixa-grande shorthand-2">
-            <p style="padding-top: 5%;">Caso você utilize o shorthand com os 4 valores, o primeiro é o top, o segundo o right, o terceiro o bottom e o quarto o left.
+            <p style="padding-top: 5%;">Caso você utilize o shorthand com os 4 valores, o primeiro é o top, o segundo o
+                right, o terceiro o bottom e o quarto o left.
                 por isso esse ficou tão diferente do outro.</p>
         </div>
 
         <div class="caixa-grande shorthand-3">
-            <p style="padding-top: 15%;">Caso você utilize o shorthand com os 4 valores, mas dessa vez nas cores, ele irá respeitar a ordem do trbl
+            <p style="padding-top: 15%;">Caso você utilize o shorthand com os 4 valores, mas dessa vez nas cores, ele
+                irá respeitar a ordem do trbl
                 (vou começar a me referenciar ao top-right-bottom-left como trbl, ok?)</p>
-            </p>
         </div>
 
     </div>

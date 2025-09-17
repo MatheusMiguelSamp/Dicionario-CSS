@@ -140,3 +140,21 @@ p {
     border-style: solid;
     border-color: black red green blue;
 }
+
+.outline {
+    outline: 5px solid black;
+}
+
+.border-blue {
+    border: 5px solid blue;
+}
+
+.offset {                               /*O outline não afeta o tamanho do elemento, diferente da border*/  
+    outline: 5px solid black;         /*Mas o outline-offset afeta, afastando o outline do elemento*/
+    outline-offset: 10px;
+}
+
+.offset-negativo {
+    outline: 3px solid yellow;
+    outline-offset: -5px;
+}
